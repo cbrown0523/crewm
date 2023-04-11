@@ -59,15 +59,80 @@ function Create() {
         <label for="color">Age</label>
         <br />
         <input
-          type="text"
-          id="age"
+          type="radio"
           name="age"
-          value={post.age}
+          id="age-range-1"
+          value="0-17"
           onChange={handleChange}
+          checked={post.age === "0-17"}
         />
+        <label for="age-range-1">Under 18</label>
+        <br />
+        <input
+          type="radio"
+          name="age"
+          id="age"
+          value="18-24"
+          onChange={handleChange}
+          checked={post.age === "18-24"}
+        />
+        <label for="age-range-2">18-24</label>
+        <br />
+        <input
+          type="radio"
+          name="age"
+          id="age"
+          value="25-34"
+          onChange={handleChange}
+          checked={post.age === "25-34"}
+        />
+        <label for="age-range-3">25-34</label>
+        <br />
+        <input
+          type="radio"
+          name="age"
+          id="age"
+          value="35-44"
+          onChange={handleChange}
+          checked={post.age === "35-44"}
+        />
+        <label for="age-range-4">35-44</label>
+        <br />
+        <input
+          type="radio"
+          name="age"
+          id="age"
+          value="45-54"
+          onChange={handleChange}
+          checked={post.age === "45-54"}
+        />
+        <label for="age-range-5">45-54</label>
+        <br />
+        <input
+          type="radio"
+          name="age"
+          id="age-range-6"
+          value="55-64"
+          onChange={handleChange}
+          checked={post.age === "55-64"}
+        />
+        <label for="age-range-6">55-64</label>
+        <br />
+        <input
+          type="radio"
+          name="age"
+          id="age-range-7"
+          value="65+"
+          onChange={handleChange}
+          checked={post.age === "65+"}
+        />
+        <label for="age-range-7">65+</label>
         <br />
         <br />
-        <input type="submit" value="Submit" />
+        <br />
+        <button style={{ backgroundColor: "blue" }} type="submit">
+          Create!
+        </button>
       </form>
     </div>
   );

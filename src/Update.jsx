@@ -3,6 +3,12 @@ import { useParams } from "react-router-dom";
 import { supabase } from "./client";
 
 const Update = ({ data }) => {
+  const [editing, setEditing] = useState(false);
+  const [post, setPost] = useState({
+    crewName: "",
+    speed: "",
+    age: "",
+  });
   const updatePost = async (event) => {
     event.preventDefault();
     await supabase
@@ -16,7 +22,7 @@ const Update = ({ data }) => {
   };
 
   const { id } = useParams();
-  const post = data.filter((item) => item.id === id)[0];
+  // const post = data.filter((item) => item.id === id)[0];
 
   const deletePost = async (event) => {
     event.preventDefault();

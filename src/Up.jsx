@@ -20,6 +20,9 @@ function Up() {
     if (error) {
       console.log(error);
     }
+    if (data) {
+      window.location = "/";
+    }
   };
 
   return <div>Up</div>;
