@@ -17,7 +17,10 @@ function Gallery() {
 
   async function getProducts() {
     try {
-      const { data, error } = await supabase.from("Crewmates").select();
+      const { data, error } = await supabase
+        .from("Crewmates")
+        .select()
+        .order("created_at", { ascending: false });
       if (error) throw error;
       if (data != null) {
         setProducts(data);
