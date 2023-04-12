@@ -30,8 +30,8 @@ The following **additional** features are implemented:
 
 Here's a walkthrough of implemented user stories:
 
-https://imgur.com/a/rJELj8G' title='Video Walkthrough' width='' alt='Video Walkthrough' />
-https://imgur.com/a/rJELj8G   video
+https://imgur.com/a/3bmXuF9 title='Video Walkthrough' width='' alt='Video Walkthrough' />
+https://imgur.com/a/3bmXuF9   video
 <!-- Replace this with whatever GIF tool you used! -->
 GIF created with ..
 LICEcap.  
@@ -43,7 +43,7 @@ LICEcap.
 ## Notes
 
 Describe any challenges encountered while building the app.
-
+After recieving grade. I went back and fixed one issue about sorting the retreived data from recent to latest. I am resubmitting
 ## License
 
     Copyright [2023] [christine brown]
